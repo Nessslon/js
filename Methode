@@ -1,0 +1,34 @@
+ "use strict"; 
+ 
+
+
+function weitererZug (feld){
+
+    this.Zahl *=feld ;
+
+
+}
+
+
+
+
+function Spieler (Name, Zahl){
+
+    this.Name = Name;
+    this.Zahl = Zahl;
+    
+    this.weitererZug = weitererZug;
+
+}
+
+let Spieler1 = new Spieler ("Jens",45);
+
+Spieler1.weitererZug(5)
+
+
+
+
+for(let i in Spieler1){
+    
+    document.write (i +":" + Spieler1[i] + " <br>")
+}
