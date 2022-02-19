@@ -1,0 +1,43 @@
+ "use strict"; 
+
+ 
+
+
+class Spieler {
+
+    constructor(name,feld){
+
+        this.name = name;
+        this.feld = feld;
+
+    }
+
+ weitererZug(Zug){
+
+    this.feld += Zug;
+}
+
+
+
+
+
+
+}
+
+
+
+let Spieler1 = new Spieler("Jens", 2)
+
+Spieler1.weitererZug(3)
+
+
+
+for(let i in Spieler1){
+
+    document.write( i + "   :" +Spieler1[i] +"<br>")
+}
+
+
+
+
+
